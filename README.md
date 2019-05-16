@@ -1,18 +1,28 @@
 package practice;
+
 import javax.swing.*;
+
 import java.awt.event.*;
+
 import java.awt.*;
 
 public class Calculator extends JFrame implements ActionListener{
 	private JPanel panel;
+	
 	private JTextField display;
+	
 	private JButton[] buttons;
+	
 	private String[] labels = { "Backspace", "", "", "CE", "C", "7", "8", "9",
 			"/", "sqrt", "4", "5", "6", "x", "%", "1", "2", "3", "-", "1/x",
 			"0", "-/+", ".", "+", "=", };
+			
 	private double result = 0;
+	
 	private String operator = "=";
+	
 	private boolean startOfNumber = true;
+	
 	public Calculator() {
 		display = new JTextField(35);
 		panel = new JPanel();
